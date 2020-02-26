@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Post
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-label>
+    <h2>{{Post.title}}</h2>
+    <p>{{Post.body}}</p>
+    <p>{{Post.creator.name}}</p>
+    <p *ngIf='imagen!=null'><img  [src]="url" alt=" "/></p>
+  </ion-label>
+</ion-content>

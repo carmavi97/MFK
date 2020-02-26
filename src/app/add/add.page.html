@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Post
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <form [formGroup]="postForm" (ngSubmit)="addPost()">
+    <ion-item>
+      <ion-label>POST</ion-label>
+      <ion-input type="text" formControlName="title"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Description</ion-label>
+      <ion-input type="text" formControlName="body"></ion-input>
+    </ion-item>
+    <ion-button (click)="openCam()" >Abrir Camara</ion-button>
+    <ion-item>
+      <img src="{{converted_image}}">
+      <ion-input type="text" formControlName="img"></ion-input>
+    </ion-item>
+    
+    <ion-button shape="round" color="primary" fill="solid"
+     type="submit" [disabled]="!this.postForm.valid" >Agregar</ion-button>
+     <ion-button size="medium" (click)="toList()">Lista</ion-button>
+     
+  </form>  
+</ion-content>

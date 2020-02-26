@@ -1,9 +1,37 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Tab Two
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
 
-<ion-content></ion-content>
+
+<ion-content>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <ion-item style="cursor: pointer;margin-top:100px;" (click)="onpickupClick()">
+          <ion-icon slot="start" name="locate"></ion-icon>
+          <ion-label position="stacked">Pickup Location</ion-label>
+           <ion-textarea  style="margin-top:20px;" >{{pickupLocation}}</ion-textarea>
+        </ion-item>
+      </div>
+      <div class="col-sm">
+        <ul>
+          <li>Coordinador de Grupo: Sergio Galisteo y Sergio Bajo 633 26 93 61</li>
+          <li>Tesorería: Akela (Cristina Peralbo) 744 46 69 48</li>
+          <li>Secretaría: Daniel Herencia 615 60 80 66</li>
+          <li>Email del grupo: 500@scoutsdeandalucia.org</li>
+        </ul>
+        O si quieres información directa de las secciones:
+        <ul>
+          <li>Coordinadora de Colonia (6 a 8 años): Tic-Tac  637 16 38 21</li>
+          <li>Coordinadora de Manada (8 a 11 años): Hathi  636 42 92 55</li>
+          <li>Coordinador de Tropa (11 a 14 años): Carlos Martínez 617 33 78 61</li>
+          <li>Coordinador de Unidad (14 a 17 años): Miguel Amezcua 651 77 33 23</li>
+          <li>Coordinador de Clan (17 a 21 años): Gabriela Entrenas 627 23 45 93</li>
+        </ul>
+      </div>
+      
+    </div>
+  </div>
+  
+
+  
+  
+  
+</ion-content>

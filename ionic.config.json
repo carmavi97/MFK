@@ -1,5 +1,7 @@
 {
   "name": "MFK",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
